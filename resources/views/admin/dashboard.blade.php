@@ -26,7 +26,7 @@
                                             <i class="bi bi-cart"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$oneQ}}</h6> 
+                                            <h6></h6> 
                                         </div>
                                     </div>
                                 </div>
@@ -44,7 +44,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$twoQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>
@@ -63,7 +63,7 @@
                                             <i class="bi bi-people"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$threeQ}}</h6> 
+                                            <h6></h6> 
                                         </div>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$fourQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$fiveQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>
@@ -116,7 +116,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$sixQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$sevenQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>
@@ -152,7 +152,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$eightQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>
@@ -170,7 +170,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$nineQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>
@@ -188,7 +188,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$tenQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>
@@ -206,7 +206,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$elevenQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>
@@ -224,7 +224,7 @@
                                             <i class="bi bi-currency-dollar"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>{{$twelveQ}}</h6>
+                                            <h6></h6>
                                             
                                         </div>
                                     </div>

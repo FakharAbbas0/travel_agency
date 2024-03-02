@@ -20,7 +20,8 @@ Route::get('/register', [HomeController::class, 'registerPage'])->name('register
 Route::get('/login', [HomeController::class, 'loginPage'])->name('login');
 Route::get('/logout', [HomeController::class, 'logout'])->name('signout');
 Route::post('/postlogin', [HomeController::class, 'postlogin'])->name('postlogin');
+
+Route::get('/', [DashboardController::class, 'dashboardPage'])->name('dashboard');
 Route::middleware(['auth'])->group(function () {
-    Route::get('/', [DashboardController::class, 'dashboardPage'])->name('dashboard');
     Route::get('/blank', [HomeController::class, 'blank_page'])->name('blank_page');
 });
