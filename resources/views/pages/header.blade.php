@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+    <title>Quovoy.com</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -53,8 +53,7 @@
 
                             <div class="d-flex justify-content-center py-4">
                                 <a href="{{url('/')}}" class="logo d-flex align-items-center w-auto">
-                                    <img src="{{asset('assets/img/logo.png')}}" alt="">
-                                    <span class="d-none d-lg-block">Random Test Generator</span>
+                                    <img src="{{asset('images/logo.png')}}" alt="">
                                 </a>
                             </div><!-- End Logo -->
                             <div class="card mb-3">

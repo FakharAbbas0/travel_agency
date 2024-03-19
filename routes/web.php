@@ -17,6 +17,7 @@ use App\Http\Controllers\HomeController;
 |
 */
 Route::get('/register', [HomeController::class, 'registerPage'])->name('register');
+Route::post('/register', [HomeController::class, 'submit_register'])->name('submit_register');
 Route::get('/login', [HomeController::class, 'loginPage'])->name('login');
 Route::get('/logout', [HomeController::class, 'logout'])->name('signout');
 Route::post('/postlogin', [HomeController::class, 'postlogin'])->name('postlogin');

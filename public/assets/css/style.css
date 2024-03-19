@@ -365,7 +365,7 @@ h6 {
 }
 
 .logo img {
-  max-height: 26px;
+  max-height: 160px;
   margin-right: 6px;
 }
 
@@ -375,7 +375,22 @@ h6 {
   color: #012970;
   font-family: "Nunito", sans-serif;
 }
-
+.primary-color{
+  color:#FFBD59;
+}
+.first-color{
+  color:#003C8D;
+}
+.second-color{
+  color:#FF6B6B;
+}
+.third-color{
+  color:#FFBD59;
+}
+.btn-primary, .btn-primary:hover , .btn-primary:active{
+  background: #003C8D;
+    border-color: #FF6B6B;
+}
 .header {
   transition: all 0.5s;
   z-index: 997;
