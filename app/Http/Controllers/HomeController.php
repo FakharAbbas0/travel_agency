@@ -26,19 +26,20 @@ class HomeController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required',
+            'password' => 'required|confirmed',
         ]);
         // Create a new user
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'role_id' => 2, // agent
             'password' => Hash::make($request->password),
         ]);
         // Optionally, you could log the user in automatically after signup
         // auth()->login($user);
 
         // Redirect the user after successful signup
-        return redirect()->route('login')->with('success', 'Your account has been created successfully. You can now login.');
+        return redirect()->route('admin.login')->with('success', 'Your account has been created successfully. You can now login.');
     }
     public function logout(Request $request)
     {

@@ -3,14 +3,14 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{ url('/') }}">
+            <a class="nav-link collapsed" href="{{route('admin.dashboard')}}">
                 <i class="bi bi-grid"></i>
                 <span>Dashboard</span>
             </a>
         </li><!-- End Dashboard Nav -->  
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{route('blank_page')}}">
+            <a class="nav-link collapsed" href="{{route('admin.blank')}}">
                 <i class="bi bi-file-earmark"></i>
                 <span>Blank</span>
             </a>
