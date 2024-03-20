@@ -7,6 +7,8 @@ use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\VerifyEmail;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +27,8 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/register', [HomeController::class, 'registerPage'])->name('register');
 Route::post('/register', [HomeController::class, 'submit_register'])->name('submit_register');
+
+Route::match(['get','post'],'/verify_email',[HomeController::class,'verfiy_email'])->name('verfiy_email');
 // Route::get('/login', [HomeController::class, 'loginPage'])->name('login');
 // Route::get('/logout', [HomeController::class, 'logout'])->name('signout');
 // Route::post('/postlogin', [HomeController::class, 'postlogin'])->name('postlogin');
@@ -47,4 +51,17 @@ Route::group(['prefix'=>'admin'],function(){
         Route::post('/authenticate',[AdminLoginController::class,'authenticate'])->name('admin.authenticate');
     });
 
+});
+
+Route::get('/session',function(){
+    // \Session::forget('verify_account_id');
+    dd(\Session::all());
+});
+
+
+Route::get('/test_mail',function(){
+    $data['user']=null;
+    $data['code']=8888;
+    // Mail::to('ali@gmail.com')->send(new VerifyEmail($data));
+    return (new VerifyEmail($data))->render();
 });

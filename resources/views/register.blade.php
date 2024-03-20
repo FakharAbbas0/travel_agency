@@ -49,5 +49,6 @@
     <div class="col-12">
         <p class="small mb-0">Already have an account? <a href="{{ route('admin.login') }}">Log in</a></p>
     </div>
+    @include('admin.alert')
 </form>
 @include('pages.footer')
