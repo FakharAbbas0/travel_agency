@@ -7,6 +7,7 @@ use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\HomeController;
+use App\Mail\ForgotPassword;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\VerifyEmail;
 
@@ -29,6 +30,8 @@ Route::get('/register', [HomeController::class, 'registerPage'])->name('register
 Route::post('/register', [HomeController::class, 'submit_register'])->name('submit_register');
 
 Route::match(['get','post'],'/verify_email',[HomeController::class,'verfiy_email'])->name('verfiy_email');
+Route::match(['get','post'],'/forgot_password',[HomeController::class,'forgot_password'])->name('forgot_password');
+Route::match(['get','post'],'/reset_password/{token}',[HomeController::class,'reset_password'])->name('reset_password');
 // Route::get('/login', [HomeController::class, 'loginPage'])->name('login');
 // Route::get('/logout', [HomeController::class, 'logout'])->name('signout');
 // Route::post('/postlogin', [HomeController::class, 'postlogin'])->name('postlogin');
@@ -60,8 +63,6 @@ Route::get('/session',function(){
 
 
 Route::get('/test_mail',function(){
-    $data['user']=null;
-    $data['code']=8888;
-    // Mail::to('ali@gmail.com')->send(new VerifyEmail($data));
-    return (new VerifyEmail($data))->render();
+    $data['user_email']=base64_encode("ahtesham@gmail.com");
+    return (new ForgotPassword($data))->render($data);
 });

@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ForgotPassword;
 use App\Mail\VerifyEmail;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Models\VerficationCode;
+use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 
@@ -111,5 +113,36 @@ class HomeController extends Controller
         }
         // Authentication failed
         return redirect()->route('login')->with('error', 'Wrong Username Or Password');
+    }
+
+    public function forgot_password(Request $request){
+        if($request->isMethod('POST')){
+            $user = User::where('email',$request->email)->where('role_id',2)->first();
+            if(is_null($user)){
+                return redirect()->route('forgot_password')->with('error', 'Email Account doesn\'t Exists')->withInput($request->only('email'));
+            }
+            $data['token']=base64_encode($user->email);
+            Mail::to($user->email)->send(new ForgotPassword($data));
+            return redirect(route('forgot_password')."?forgot_password_mail_sent=true");
+        }else{
+            return view('forgot_password');
+        }
+    }
+
+    public function reset_password(Request $request,$token){
+        $email = base64_decode($token);
+        $user = User::where('email',$email)->where('role_id',2)->first();
+        if(is_null($user)){
+            return redirect()->route('forgot_password')->with('error', 'Email Account doesn\'t Exists');
+        }
+        if($request->isMethod('POST')){
+            $request->validate([
+                'password' => 'required|confirmed',
+            ]);
+            $user->password = Hash::make($request->password);
+            $user->save();
+            return redirect()->route('admin.login')->with('success', 'Password Changed Successfully');
+        }
+        return view('reset_password');
     }
 }
