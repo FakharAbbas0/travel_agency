@@ -1,463 +1,360 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" xml:lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="x-apple-disable-message-reformatting" />
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <title>
+
+    </title>
+    <!--[if !mso]><!-- -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        #outlook a {
+            padding: 0;
+        }
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass * {
+            line-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        p {
+            display: block;
+            margin: 13px 0;
+        }
+    </style>
+    <!--[if !mso]><!-->
+    <style type="text/css">
+        @media only screen and (max-width:480px) {
+            @-ms-viewport {
+                width: 320px;
+            }
+            @viewport {
+                width: 320px;
+            }
+        }
+    </style>
+    <!--<![endif]-->
     <!--[if mso]>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <![endif]-->
-  	<title>Verify Email Address</title>
-		<style type="text/css">
-      /* === Custom Fonts === */
-      /* Add your fonts here via imports */
+        <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+    <!--[if lte mso 11]>
+        <style type="text/css">
+          .outlook-group-fix { width:100% !important; }
+        </style>
+        <![endif]-->
 
-      /* === Client Styles === */
-      #outlook a {padding: 0;}
-      .ReadMsgBody {width: 100%;} .ExternalClass {width: 100%;}
-      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}        
-      body, table, td, p, a, li, blockquote {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
-      table, td {mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
-      img {-ms-interpolation-mode: bicubic;}
 
-      /* === Reset Styles === */
-      body, p, h1, h3 {margin: 0; padding: 0;}
-      img {border: 0; display: block; height: auto; line-height: 100%; max-width: 100%; outline: none; text-decoration: none;}
-      table, td {border-collapse: collapse}
-      body {height: 100% !important; margin: 0; padding: 0; width: 100% !important;}
+    <style type="text/css">
+        @media only screen and (min-width:480px) {
+            .mj-column-per-100 {
+                width: 100% !important;
+            }
+        }
+    </style>
 
-      /* === Page Structure === */
-      /*
-      Set the background color of your email. Light neutrals or your primary brand color are most common.
-      */
-      body {
-        background-color: #f8fafc; /* Edit */
-      }
 
-      /*
-      This optional section will be hidden in your email but the text will appear after the subject line. 
-      */
-      #preheader {display: none !important; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; mso-hide: all !important; opacity: 0; overflow: hidden; visibility: hidden;}
+    <style type="text/css">
+    </style>
 
-      /*
-      Set the background color, border and radius of your primary content area. White or light neutrals for the background-color are recommended.
-      */
-      .panel-container {
-        background-color: #ffffff; /* Edit */
-        border: 1px solid #eaebec; /* Edit */
-        border-collapse: separate;
-        border-radius: 2px; /* Edit */
-      }
+</head>
 
-      /*
-      Set the horizontal padding of your content areas. Any changes should following the default spacing scale.
-      */         
-      #header, #footer {padding-left: 32px; padding-right: 32px;}
-      .panel-body {padding-left: 32px; padding-right: 32px;}
+<body style="background-color:#f9f9f9;">
 
-      /*
-      Set the sizes of your spacer rows. Spacers are used for vertical padding. Any changes should following the default spacing scale.
-      */
-      .spacer-xxs, .spacer-xs, .spacer-sm, .spacer-md, .spacer-lg, .spacer-xl, .spacer-xxl {display: block; width: 100%;}
-      .spacer-xxs {height: 4px; line-height: 4px;}
-      .spacer-xs {height: 8px; line-height: 8px;}
-      .spacer-sm {height: 16px; line-height: 16px;}
-      .spacer-md {height: 24px; line-height: 24px;}
-      .spacer-lg {height: 32px; line-height: 32px;}
-      .spacer-xl {height: 40px; line-height: 40px;}
-      .spacer-xxl {height: 48px; line-height: 48px;}
+
+    <div style="background-color:#f9f9f9;">
+
+
+        <!--[if mso | IE]>
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+
+
+        <div style="background:#f9f9f9;background-color:#f9f9f9;Margin:0px auto;max-width:600px;">
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f9f9f9;background-color:#f9f9f9;width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="border-bottom:#333957 solid 5px;direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+                            <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
       
-      /* === Page Styles === */
-      /*
-      Set the font-family of your type. Classes should be set directly on the table cell for compatibility with older clients. Any changes should following the default typography scale.
-      */
-      .headline-one, .headline-two, .headline-three, .heading, .subheading, .body, .caption, .button, .table-heading {
-        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; /* Edit */
-        font-style: normal;
-        font-variant: normal;
-      }
-      .headline-one {font-size: 32px; font-weight: 500; line-height: 40px;}
-      .headline-two {font-size: 24px; font-weight: 500; line-height: 32px;}
-      .headline-three {font-size: 20px; font-weight: 500; line-height: 24px;}
-      .heading {font-size: 16px; font-weight: 500; line-height: 24px;}
-      .subheading {font-size: 12px; font-weight: 700; line-height: 16px; text-transform: uppercase;}
-      .body {font-size: 14px; font-weight: 400; line-height: 20px;}
-      .caption {font-size: 12px; font-weight: 400; line-height: 16px;}
-      .table-heading {font-size: 10px; font-weight: 700; text-transform: uppercase;}
-
-      /*
-      Set the styles of your links.
-      */
-      a {color: inherit; font-weight: normal; text-decoration: underline;}
-
-      /*
-      Set the colors of your text.
-      */      
-      .text-primary {
-        color: #007bff; /* Edit */
-      }
-      .text-secondary {
-        color: #6c757d; /* Edit */
-      }
-      .text-black {
-        color: #000000; /* Edit */
-      }
-      .text-dark-gray {
-        color: #343a40; /* Edit */
-      }
-      .text-gray {
-        color: #6c757d; /* Edit */
-      }
-      .text-light-gray {
-        color: #f8f9fa; /* Edit */
-      }
-      .text-white {
-        color: #ffffff; /* Edit */
-      }
-      .text-success {
-        color: #28a745; /* Edit */
-      }
-      .text-danger {
-        color: #dc3545; /* Edit */
-      }
-      .text-warning {
-        color: #ffc107; /* Edit */
-      }
-      .text-info {
-        color: #17a2b8; /* Edit */
-      }
-
-      /*
-      Set the styles of your buttons. Each button requires a matching background.
-      */
-      .button-bg {
-        border-radius: 2px; /* Editable */
-      }
-      .button-bg-primary {
-        background-color: #007bff /* Editable */;
-      }
-      .button-bg-secondary {
-        background-color: #6c757d; /* Editable */
-      }
-      .button-bg-success {
-        background-color: #28a745; /* Editable */
-      }
-      .button-bg-danger {
-        background-color: #dc3545; /* Editable */
-      }
-      .button {
-        border-radius: 2px; /* Editable */
-        color: #ffffff; /* Editable */
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 700;       
-        padding: 10px 20px 10px;
-        text-decoration: none;
-      }
-      .button-primary {
-        border: 1px solid #007bff /* Editable */;
-      }
-      .button-secondary {
-        border: 1px solid #6c757d; /* Editable */
-      }
-      .button-success {
-        border: 1px solid #28a745; /* Editable */
-      }      
-      .button-danger {
-        border: 1px solid #dc3545; /* Editable */
-      }
-
-      /*
-      Set the styles of your backgrounds.
-      */     
-      .bg {padding-left: 24px; padding-right: 24px;}    
-      .bg-primary {
-        background-color: #007bff; /* Edit */
-      }
-      .bg-secondary {
-        background-color: #6c757d; /* Edit */
-      }
-      .bg-black {
-        background-color: #000000; /* Edit */
-      }
-      .bg-dark-gray {
-        background-color: #343a40; /* Edit */
-      }
-      .bg-gray {
-        background-color: #6c757d; /* Edit */
-      }
-      .bg-light-gray {
-        background-color: #f8f9fa; /* Edit */
-      }
-      .bg-white {
-        background-color: #ffffff; /* Edit */
-      }
-      .bg-success {
-        background-color: #28a745; /* Edit */
-      }
-      .bg-danger {
-        background-color: #dc3545; /* Edit */
-      }
-      .bg-warning {
-        background-color: #ffc107; /* Edit */
-      }
-      .bg-info {
-        background-color: #17a2b8; /* Edit */
-      }
-
-      /*
-      Set the styles of your tabular information. This class should not be set on tables with a role of presentation.
-      */
-      .table {min-width: 100%; width: 100%;}
-      .table td {
-        border-top: 1px solid #eaebec; /* Editable */
-        padding-bottom: 12px;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-top: 12px;
-        vertical-align: top;
-      }
+        </tr>
       
-      /*
-      Set the styles of your utility classes.
-      */
-      .address, .address a {color: inherit !important;}
-      .border-solid {
-        border-style: solid !important;
-        border-width: 2px !important; /* Edit */
-        border-color: #eaebec !important; /* Edit */
-      }
-      .divider {
-        border-bottom: 0px; 
-        border-top: 1px solid #eaebec; /* Edit */
-        height: 1px; 
-        line-height: 1px;
-        width: 100%;
-      }    
-      .text-bold {font-weight: 700;}
-      .text-italic {font-style: italic;}
-      .text-uppercase {text-transform: uppercase;}
-      .text-underline {text-decoration: underline;}
-
-      @media only screen and (max-width: 599px) 
-      {
-        /* === Client Styles === */        
-        body, table, td, p, a, li, blockquote {-webkit-text-size-adjust: none !important;}
-        body {min-width: 100% !important; width: 100% !important;}
-        center {padding-left: 12px !important; padding-right: 12px !important;}
-
-        /* === Page Structure === */
-        /*
-        Adjust sizes and spacing on mobile.
-        */
-        #email-container {max-width: 600px !important; width: 100% !important;}
-        #header, #footer {padding-left: 24px !important; padding-right: 24px !important;}
-        .panel-container {max-width: 600px !important; width: 100% !important;}  
-        .panel-body {padding-left: 24px !important; padding-right: 24px !important;}
-        .column-responsive {display: block !important; padding-bottom: 24px !important; width:100% !important;}
-        .column-responsive img {width: auto !important;}
-        .column-responsive-last {padding-bottom: 0px !important;}
-        .column-responsive-gutter {display: none !important;}
-
-        /* === Page Styles === */
-        /*
-        Adjust sizes and spacing on mobile.
-        */
-      }    
-    </style>    
-    <!--[if gte mso 9]>
-    <xml>
-      <o:OfficeDocumentSettings>
-        <o:AllowPNG/>
-        <o:PixelsPerInch>96</o:PixelsPerInch>
-      </o:OfficeDocumentSettings>
-    </xml>
-    <![endif]-->
-    <!--[if mso]>
-      <xml xmlns:w="urn:schemas-microsoft-com:office:word">
-        <w:WordDocument><w:AutoHyphenation/></w:WordDocument>
-      </xml>
-    <![endif]-->
-	</head>
-<body>
-  <center>
-  <!-- Start Email Container -->
-  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-container">
-    <tbody>
-      <!-- Start Preheader -->
-      <tr>
-        <td id="preheader">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </td>
-      </tr>
-      <!-- End Preheader -->
-      <tr>
-        <td class="spacer-lg"></td>
-      </tr>
-      <tr>
-        <td valign="top" id="email-body">
-          <!-- Start Panel Container -->
-          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="panel-container">
-            <tbody>
-              <tr>
-                <td class="spacer-lg"></td>
-              </tr>
-              <!-- Start Header -->
-              {{-- <tr>
-                <td align="center" id="header">
-                  <a href="https://www.example.com">
-                    <img alt="Company" border="0" src="http://travel_agency.test/images/logo.png" width="100">
-                  </a>
-                </td>
-              </tr> --}}
-              <!-- End Header -->
-              <tr>
-                <td class="spacer-sm"></td>
-              </tr>
-              <tr>
-                <td class="panel-body">
-                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                    <tbody>
-                      <!-- Start Text -->                                
-                      <tr>
-                        <td align="left" class="headline-two text-dark-gray">
-                          Verify your Email Address
-                        </td>
-                      </tr>
-                      <!-- End Text -->
-                      <tr>
-                        <td class="spacer-sm"></td>
-                      </tr>                                 
-                      <!-- Start Text -->                                
-                      <tr>
-                        <td align="left" class="body text-dark-gray">
-                          Copy your account Verification Code
-                        </td>
-                      </tr>
-                      <!-- End Text -->
-                      <tr>
-                        <td class="spacer-md"></td>
-                      </tr>
-                      <!-- Start Button -->
-                      <tr>          
-                        <td align="left">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                            <tbody>
-                              <tr>
-                                <td>
-                                    <h2 style="margin: 0">{{ $data['code'] }}</h2>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <!-- End Button -->
-                      <tr>
-                        <td class="spacer-md"></td>
-                      </tr>                                 
-                      <!-- Start Text -->                               
-                      <tr>
-                        <td align="left" class="body text-dark-gray">
-                            If you have any questions or need assistance, feel free to reach out to our support team at 
-                        </td>
-                      </tr>
-                      <!-- End Text -->
-                      <tr>
-                        <td class="spacer-lg"></td>
-                      </tr>
-                      <!-- Start Text -->                                
-                      <tr>
-                        <td align="left" class="body text-dark-gray">
-                          Best Regards,<br />
-                          The Quovoy Team
-                        </td>
-                      </tr>
-                      <!-- End Text -->
-                    </tbody>
                   </table>
-                </td>
-              </tr>
-              <tr>
-                <td class="spacer-lg"></td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- End Panel Container  -->
-        </td>
-      </tr>
-      <tr>
-        <td class="spacer-lg"></td>
-      </tr>
-      <!-- Start Footer -->
-      <tr>
-        <td align="left" id="footer">
-          <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-            <tbody> 
-              <tr>
-                <td align="left">
-                  <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                    <tbody>
-                      <tr>
-                        <td valign="top" width="28">
-                          <a href="https://www.example.com">
-                            <img alt="Icon" border="0" src="https://www.vouchful.com/images/email-kit/placeholder-icon.png" width="28" />
-                          </a>
+                <![endif]-->
                         </td>
-                        <td width="16"></td>
-                        <td valign="top" width="28">
-                          <a href="https://www.example.com">
-                            <img alt="Icon" border="0" src="https://www.vouchful.com/images/email-kit/placeholder-icon.png" width="28" />
-                          </a>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+
+
+        <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="border:#dddddd solid 1px;border-top:0px;direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+                            <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               style="vertical-align:bottom;width:600px;"
+            >
+          <![endif]-->
+
+                            <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:bottom;" width="100%">
+
+                                    <tr>
+                                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:64px;">
+
+                                                            <img height="auto" src="https://i.imgur.com/KO1vcE9.png" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="64" />
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:40px;word-break:break-word;">
+
+                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:32px;font-weight:bold;line-height:1;text-align:center;color:#555;">
+                                                Email Verification
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:0;word-break:break-word;">
+
+                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:22px;text-align:center;color:#555;">
+                                                Yes, we know.
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+
+                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:22px;text-align:center;color:#555;">
+                                                An email to confirm an email. 🤪
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:20px;word-break:break-word;">
+
+                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:22px;text-align:center;color:#555;">
+                                                Please validate your email address in order to get started using.
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+
+                                          <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:29px;font-weight:bold;line-height:1;text-align:center;color:#003C8D;">
+                                            {{ $data['code'] }}
+                                        </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+
+                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
+                                                Please send and feedback or bug info<br> to <a href="mailto:info@example.com" style="color:#2F67F6">info@example.com</a>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+
+                            <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
                         </td>
-                        <td width="16"></td>
-                        <td valign="top" width="28">
-                          <a href="https://www.example.com">
-                            <img alt="Icon" border="0" src="https://www.vouchful.com/images/email-kit/placeholder-icon.png" width="28" />
-                          </a>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+
+
+        <div style="Margin:0px auto;max-width:600px;">
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+                            <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               style="vertical-align:bottom;width:600px;"
+            >
+          <![endif]-->
+
+                            <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align:bottom;padding:0;">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+
+                                                    <tr>
+                                                        <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+
+                                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:300;line-height:1;text-align:center;color:#575757;">
+                                                                Some Firm Ltd, 35 Avenue. City 10115, USA
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="center" style="font-size:0px;padding:10px;word-break:break-word;">
+
+                                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:300;line-height:1;text-align:center;color:#575757;">
+                                                                <a href="#" style="color:#575757">Unsubscribe</a> from our emails
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                            <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
                         </td>
-                        <td width="16"></td>
-                        <td valign="top" width="28">
-                          <a href="https://www.example.com">
-                            <img alt="Icon" border="0" src="https://www.vouchful.com/images/email-kit/placeholder-icon.png" width="28" />
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>  
-                </td>
-              </tr>        
-              <tr>
-                <td class="spacer-sm"></td>
-              </tr>             
-              <tr>
-                <td align="left" class="body text-secondary">
-                  &#169; Company, Inc. All Rights Reserved.
-                  <br />
-                  <span class="address">101 King St, San Francisco, CA 94107</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="spacer-md"></td>
-              </tr>       
-              <tr>
-                <td align="left" class="body text-secondary">
-                  You are being contacted because you signed up for Company.
-                  <br />
-                  <a href="https://www.example.com" class="body text-primary">Unsubscribe</a> | <a href="https://www.example.com" class="body text-primary">Privacy Policy</a> | <a href="https://www.example.com" class="body text-primary">Support</a>
-                </td>
-              </tr>    
-            </tbody>           
-          </table>
-        </td>
-      </tr> 
-      <!-- End Footer -->
-      <tr>
-        <td class="spacer-lg"></td>
-      </tr>     
-    </tbody>
-  </table>
-  <!-- End Email Container -->
-  </center>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
+
+
+    </div>
+
 </body>
+
 </html>
