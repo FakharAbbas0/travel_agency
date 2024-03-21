@@ -34,22 +34,21 @@ class HomeController extends Controller
            $user->is_verify=1;
            $user->save();
            Session::forget('verify_account_id');
+           Session::forget('verfication_mail_sent');
            return redirect()->route('admin.login')->with('success', 'Your Account has been Verified');
+        }else{
+            if(($request->has('send') && $request->send=="true") || (Session::has("verfication_mail_sent") && Session::get("verfication_mail_sent")==false)){
+                $user_id=Session::get('verify_account_id');
+                $user = User::find($user_id);
+                $verifyCode=VerficationCode::where('user_id',$user->id)->whereNull('expiration_date')->first();
+                $code = $verifyCode->verfication_code;
+                $data['user']=$user;
+                $data['code']=$code;
+                Mail::to($user->email)->send(new VerifyEmail($data));
+                Session::put('verfication_mail_sent',true);
+            }
+            return view('verfiy_email');
         }
-
-        if(!Session::has("verify_account_id")){
-            return redirect()->route('register');
-        }
-        if($request->has('send') || $request->has('resend')){
-            $user_id=Session::get('verify_account_id');
-            $user = User::find($user_id);
-            $verifyCode=VerficationCode::where('user_id',$user->id)->whereNull('expiration_date')->first();
-            $code = $verifyCode->verfication_code;
-            $data['user']=$user;
-            $data['code']=$code;
-            Mail::to($user->email)->send(new VerifyEmail($data));
-        }
-        return view('verfiy_email');
     }
     public function registerPage()
     {
@@ -77,10 +76,11 @@ class HomeController extends Controller
         // Optionally, you could log the user in automatically after signup
         // auth()->login($user);
         Session::put('verify_account_id',$user->id);
+        Session::put('verfication_mail_sent',false);
         // Redirect the user after successful signup
         // return redirect()->route('admin.login')->with('success', 'Your account has been created successfully. You can now login.');
 
-        return redirect(route('verfiy_email').'?send')->with('info', 'Please Verify Your Account Email Has been Sent');
+        return redirect(route('verfiy_email'))->with('info', 'Please Verify Your Account Email Has been Sent');
     }
     public function logout(Request $request)
     {

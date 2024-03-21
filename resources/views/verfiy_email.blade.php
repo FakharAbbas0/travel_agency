@@ -23,7 +23,7 @@
         <button class="btn btn-primary w-100" type="submit">Verify Email</button>
     </div>
     <div class="col-12">
-        <p class="small mb-0">Not Received a code? <a href="{{ route('verfiy_email') }}?resend=true">Resend</a></p>
+        <p class="small mb-0">Not Received a code? <a href="{{ route('verfiy_email') }}?send=true">Resend</a></p>
     </div>
     @include('admin.alert')
 </form>
