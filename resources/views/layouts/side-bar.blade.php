@@ -12,9 +12,10 @@
         <li class="nav-item">
             <a class="nav-link collapsed" href="{{route('admin.blank')}}">
                 <i class="bi bi-file-earmark"></i>
-                <span>Blank</span>
+                <span>Quotes</span>
             </a>
-        </li><!-- End Blank Page Nav -->
+        </li>
+        <!-- End Blank Page Nav -->
 
     </ul>
 

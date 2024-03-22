@@ -401,7 +401,18 @@ h6 {
   /* Toggle Sidebar Button */
   /* Search Bar */
 }
+.fill-height{
+  padding-top: 150px;
+  padding-bottom: 150px;  
+  min-height: 100%;
+  height:70vh;
+}
 
+#hello{
+ vertical-align: middle;
+ font-family: 'Georgia'; 
+ font-weight: bold
+}
 .header .toggle-sidebar-btn {
   font-size: 32px;
   padding-left: 10px;
