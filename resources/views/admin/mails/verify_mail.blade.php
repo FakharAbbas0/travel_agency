@@ -166,7 +166,7 @@
                             <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
 
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:bottom;" width="100%">
-
+{{-- 
                                     <tr>
                                         <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
 
@@ -183,7 +183,7 @@
                                             </table>
 
                                         </td>
-                                    </tr>
+                                    </tr> --}}
 
                                     <tr>
                                         <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:40px;word-break:break-word;">
@@ -239,7 +239,7 @@
                                         <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
 
                                             <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
-                                                Please send and feedback or bug info<br> to <a href="mailto:info@example.com" style="color:#2F67F6">info@example.com</a>
+                                                Please send and feedback or bug info<br> to <a href="mailto:info@example.com" style="color:#2F67F6">{{ env('MAIL_FROM_ADDRESS') }}</a>
                                             </div>
 
                                         </td>
@@ -293,7 +293,7 @@
             >
           <![endif]-->
 
-                            <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
+                            {{-- <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
 
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                                     <tbody>
@@ -329,7 +329,7 @@
                                     </tbody>
                                 </table>
 
-                            </div>
+                            </div> --}}
 
                             <!--[if mso | IE]>
             </td>

@@ -63,6 +63,6 @@ Route::get('/session',function(){
 
 
 Route::get('/test_mail',function(){
-    $data['user_email']=base64_encode("ahtesham@gmail.com");
-    return (new ForgotPassword($data))->render($data);
+    $data['code']=base64_encode("ahtesham@gmail.com");
+    return (new VerifyEmail($data))->render($data);
 });
