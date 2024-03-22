@@ -172,7 +172,7 @@
                                     <tr>
                                         <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:0;word-break:break-word;">
 
-                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:22px;text-align:center;color:#555;">
+                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
                                                 Forgot your password? That’s no problem
                                             </div>
 
@@ -182,7 +182,7 @@
                                     <tr>
                                         <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
 
-                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:22px;text-align:center;color:#555;">
+                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
                                                 Reset your password by clicking the link below
                                             </div>
 
@@ -208,7 +208,7 @@
                                     <tr>
                                         <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:20px;word-break:break-word;">
 
-                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:22px;text-align:center;color:#555;">
+                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
                                                 If you do not want to change your password or didn't request a reset, you can ignore and delete this email.
                                             </div>
 
@@ -218,7 +218,7 @@
                                     <tr>
                                         <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:0;word-break:break-word;">
 
-                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:22px;text-align:center;color:#555;">
+                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
                                                 Quovoy Support Team
                                                 
                                             </div>

@@ -10,6 +10,7 @@ use App\Http\Controllers\HomeController;
 use App\Mail\ForgotPassword;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\VerifyEmail;
+use App\Mail\WelcomeMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,6 +64,6 @@ Route::get('/session',function(){
 
 
 Route::get('/test_mail',function(){
-    $data['code']=base64_encode("ahtesham@gmail.com");
-    return (new VerifyEmail($data))->render($data);
+    $data['token']=base64_encode("ahtesham@gmail.com");
+    return (new WelcomeMail($data))->render($data);
 });

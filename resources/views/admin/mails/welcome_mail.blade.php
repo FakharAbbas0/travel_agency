@@ -1,5 +1,6 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
     <title>
@@ -61,6 +62,7 @@
             @-ms-viewport {
                 width: 320px;
             }
+
             @viewport {
                 width: 320px;
             }
@@ -113,10 +115,12 @@
 
         <div style="background:#f9f9f9;background-color:#f9f9f9;Margin:0px auto;max-width:600px;">
 
-            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f9f9f9;background-color:#f9f9f9;width:100%;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                style="background:#f9f9f9;background-color:#f9f9f9;width:100%;">
                 <tbody>
                     <tr>
-                        <td style="border-bottom:#333957 solid 5px;direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+                        <td
+                            style="border-bottom:#333957 solid 5px;direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
                             <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -149,10 +153,12 @@
 
         <div style="background:#fff;background-color:#fff;Margin:0px auto;max-width:600px;">
 
-            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fff;background-color:#fff;width:100%;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                style="background:#fff;background-color:#fff;width:100%;">
                 <tbody>
                     <tr>
-                        <td style="border:#dddddd solid 1px;border-top:0px;direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+                        <td
+                            style="border:#dddddd solid 1px;border-top:0px;direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
                             <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -163,83 +169,87 @@
             >
           <![endif]-->
 
-                            <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
+                            <div class="mj-column-per-100 outlook-group-fix"
+                                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
 
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:bottom;" width="100%">
-{{-- 
-                                    <tr>
-                                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="vertical-align:bottom;" width="100%">
 
-                                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="width:64px;">
 
-                                                            <img height="auto" src="https://i.imgur.com/KO1vcE9.png" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="64" />
-
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-
-                                        </td>
-                                    </tr> --}}
 
                                     <tr>
-                                        <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:40px;word-break:break-word;">
+                                        <td align="center"
+                                            style="font-size:0px;padding:10px 25px;padding-bottom:0;word-break:break-word;">
 
-                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:32px;font-weight:bold;line-height:1;text-align:center;color:#555;">
-                                                Email Verification
+                                            <div
+                                                style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
+                                                Welcome to Quovoy
                                             </div>
 
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:0;word-break:break-word;">
+                                        <td align="center"
+                                            style="font-size:0px;padding:10px 25px;word-break:break-word;">
 
-                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
-                                                Yes, we know.
+                                            <div
+                                                style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:left;color:#555;">
+                                                We're excited at the opportunity to help you better connect with
+                                                travellers who want amazing trips personalised and tailor-made to their
+                                                specific requirements and budget.
                                             </div>
 
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                        <td align="center"
+                                            style="font-size:0px;padding:10px 25px;padding-bottom:20px;word-break:break-word;">
 
-                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
-                                                An email to confirm an email. 🤪
+                                            <div
+                                                style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:left;color:#555;">
+                                                Let’s get started <a href="{{ route('admin.login') }}" target="_blank">Link</a>
                                             </div>
 
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:20px;word-break:break-word;">
+                                        <td align="center"
+                                            style="font-size:0px;padding:10px 25px;padding-bottom:20px;word-break:break-word;">
 
-                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
-                                                Please validate your email address in order to get started using.
+                                            <div
+                                                style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:left;color:#555;">
+                                                If you have any questions or need assistance, feel free to reach out to
+                                                our support team at <a href="mailto:{{ env('MAIL_FROM_ADDRESS') }}" style="color:#2F67F6">{{ env('MAIL_FROM_ADDRESS') }}</a>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td align="center"
+                                            style="font-size:0px;padding:10px 25px;padding-bottom:0;word-break:break-word;">
+
+                                            <div
+                                                style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:left;color:#555;">
+                                                Best regards,
+
                                             </div>
 
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                        <td align="center"
+                                            style="font-size:0px;padding:10px 25px;word-break:break-word;">
 
-                                          <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:29px;font-weight:bold;line-height:1;text-align:center;color:#003C8D;">
-                                            {{ $data['code'] }}
-                                        </div>
-
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-
-                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:center;color:#555;">
-                                                Please send and feedback or bug info<br> to <a href="mailto:{{ env('MAIL_FROM_ADDRESS') }}" style="color:#2F67F6">{{ env('MAIL_FROM_ADDRESS') }}</a>
+                                            <div
+                                                style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:22px;text-align:left;color:#555;">
+                                                The Quovoy Team
                                             </div>
 
                                         </td>
@@ -279,7 +289,8 @@
 
         <div style="Margin:0px auto;max-width:600px;">
 
-            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                style="width:100%;">
                 <tbody>
                     <tr>
                         <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
@@ -293,15 +304,18 @@
             >
           <![endif]-->
 
-                            {{-- <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
+                            <div class="mj-column-per-100 outlook-group-fix"
+                                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
 
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    width="100%">
                                     <tbody>
                                         <tr>
                                             <td style="vertical-align:bottom;padding:0;">
 
-                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                    role="presentation" width="100%">
+                                                    {{-- 
                                                     <tr>
                                                         <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
 
@@ -320,7 +334,7 @@
                                                             </div>
 
                                                         </td>
-                                                    </tr>
+                                                    </tr> --}}
 
                                                 </table>
 
@@ -329,7 +343,7 @@
                                     </tbody>
                                 </table>
 
-                            </div> --}}
+                            </div>
 
                             <!--[if mso | IE]>
             </td>

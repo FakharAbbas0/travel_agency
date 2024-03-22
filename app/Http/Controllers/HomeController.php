@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\ForgotPassword;
 use App\Mail\VerifyEmail;
+use App\Mail\WelcomeMail;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -35,6 +36,7 @@ class HomeController extends Controller
            $user = User::find($verifyCode->user_id);
            $user->is_verify=1;
            $user->save();
+           Mail::to($user->email)->send(new WelcomeMail([]));
            Session::forget('verify_account_id');
            Session::forget('verfication_mail_sent');
            return redirect()->route('admin.login')->with('success', 'Your Account has been Verified');
