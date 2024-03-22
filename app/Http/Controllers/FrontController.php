@@ -8,6 +8,6 @@ class FrontController extends Controller
 {
     public function frontPage(){
         $data = []; 
-        return view('front_page',$data);
+        return view('dashboard',$data);
     }
 }

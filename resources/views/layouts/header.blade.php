@@ -170,7 +170,11 @@
 
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                     <li class="dropdown-header"> 
+                        @if(Auth::guard('admin')->check())
                         <span>{{ Auth::guard('admin')->user()->name }}</span>
+                        @else 
+                        <span>Guest</span>
+                        @endif
                     </li>
                     <li>
                         <hr class="dropdown-divider">
