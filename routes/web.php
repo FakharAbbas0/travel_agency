@@ -61,6 +61,7 @@ Route::get('/', [FrontController::class, 'frontPage'])->name('dashboard');
 
 Route::group(['middleware'=>'admin.auth'],function(){
     Route::get('/dashboard',[AdminHomeController::class,'index'])->name('admin.dashboard');
+    Route::match(['get','post'],'/profile',[AdminHomeController::class,'profile'])->name('admin.profile');
     Route::get('/blank',[AdminHomeController::class,'blank_page'])->name('admin.blank');
     Route::get('/logout',[AdminHomeController::class,'logout'])->name('admin.logout');
 });
