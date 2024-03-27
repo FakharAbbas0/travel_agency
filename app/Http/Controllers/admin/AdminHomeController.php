@@ -64,14 +64,28 @@ class AdminHomeController extends Controller
 
     public function invite_colleage(Request $request){
         if($request->isMethod('POST')){
-           $validator = Validator::make($request->all(),[
-            "emails.*"  => "required|email",
-           ]);
+            
+            $rules = [];
+            $allempty = true;
+            foreach($request->emails as $key => $email){
+                if(!empty($email)){
+                    $rules["emails.{$key}"] = "email";
+                    $allempty = false;
+                }
+            }
+
+            if($allempty){
+                return redirect(route('admin.invite_colleage'))->withInput($request->only('emails'))->with('error','Please provide atleast 1 Email account');
+            }
+
+           $validator = Validator::make($request->all(),$rules);
 
            if($validator->passes()){
                 $emails = $request->emails;
                 foreach ($emails as $recipient) {
-                    Mail::to($recipient)->queue(new InviteColleageMail());
+                    if(!empty($recipient)){
+                        Mail::to($recipient)->queue(new InviteColleageMail());
+                    }
                 }
                 return redirect(route('admin.invite_colleage'))->with('info','Colleages have been Invited');
            }else{
