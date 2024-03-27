@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Mail\InviteColleageMail;
 use App\Models\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 
 class AdminHomeController extends Controller
 {
@@ -57,6 +60,26 @@ class AdminHomeController extends Controller
         }
 
         return view('admin.profile',compact('profile'));
+    }
+
+    public function invite_colleage(Request $request){
+        if($request->isMethod('POST')){
+           $validator = Validator::make($request->all(),[
+            "emails.*"  => "required|email",
+           ]);
+
+           if($validator->passes()){
+                $emails = $request->emails;
+                foreach ($emails as $recipient) {
+                    Mail::to($recipient)->queue(new InviteColleageMail());
+                }
+                return redirect(route('admin.invite_colleage'))->with('info','Colleages have been Invited');
+           }else{
+            return redirect(route('admin.invite_colleage'))->withInput($request->only('emails'))->withErrors($validator->errors());
+           }
+        }else{
+            return view('admin.invite_colleage');
+        }
     }
 
     public function logout(){

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ForgotPassword;
+use App\Mail\InviteColleageMail;
 use App\Mail\VerifyEmail;
 use App\Mail\WelcomeMail;
 use App\Models\User;
@@ -147,4 +148,5 @@ class HomeController extends Controller
         }
         return view('reset_password');
     }
+    
 }

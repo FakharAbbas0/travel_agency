@@ -8,6 +8,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\HomeController;
 use App\Mail\ForgotPassword;
+use App\Mail\InviteColleageMail;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\VerifyEmail;
 use App\Mail\WelcomeMail;
@@ -64,6 +65,7 @@ Route::group(['middleware'=>'admin.auth'],function(){
     Route::match(['get','post'],'/profile',[AdminHomeController::class,'profile'])->name('admin.profile');
     Route::get('/blank',[AdminHomeController::class,'blank_page'])->name('admin.blank');
     Route::get('/logout',[AdminHomeController::class,'logout'])->name('admin.logout');
+    Route::match(['get','post'],'/invite_colleage',[AdminHomeController::class,'invite_colleage'])->name('admin.invite_colleage');
 });
 
 Route::group(['middleware'=>'admin.guest'],function(){
@@ -79,6 +81,6 @@ Route::get('/session',function(){
 
 
 Route::get('/test_mail',function(){
-    $data['token']=base64_encode("ahtesham@gmail.com");
-    return (new WelcomeMail($data))->render($data);
+    // $data['token']=base64_encode("ahtesham@gmail.com");
+    return (new InviteColleageMail())->render();
 });
