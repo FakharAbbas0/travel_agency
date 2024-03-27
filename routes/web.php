@@ -64,6 +64,8 @@ Route::group(['middleware'=>'admin.auth'],function(){
     Route::get('/dashboard',[AdminHomeController::class,'index'])->name('admin.dashboard');
     Route::match(['get','post'],'/profile',[AdminHomeController::class,'profile'])->name('admin.profile');
     Route::get('/blank',[AdminHomeController::class,'blank_page'])->name('admin.blank');
+    Route::get('/get-quote',[AdminHomeController::class,'get_trail_page'])->name('admin.trail_page');
+    Route::get('/get-extra',[AdminHomeController::class,'get_extra_page'])->name('admin.get_extra');
     Route::get('/logout',[AdminHomeController::class,'logout'])->name('admin.logout');
     Route::match(['get','post'],'/invite_colleage',[AdminHomeController::class,'invite_colleage'])->name('admin.invite_colleage');
 });

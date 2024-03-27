@@ -76,7 +76,7 @@ class HomeController extends Controller
         $verificatin_code = $user->id.rand(1111,9999);
         $verificatin = new VerficationCode();
         $verificatin->user_id = $user->id;
-        $verificatin->verfication_code = $verificatin_code;
+        $verificatin->verfication_code = 123456; // $verificatin_code;
         $verificatin->save();
         // Optionally, you could log the user in automatically after signup
         // auth()->login($user);
@@ -148,5 +148,5 @@ class HomeController extends Controller
         }
         return view('reset_password');
     }
-    
+
 }

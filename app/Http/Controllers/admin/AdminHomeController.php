@@ -21,6 +21,13 @@ class AdminHomeController extends Controller
         return view('admin.blank');
     }
 
+    public function get_trail_page(){
+        return view('admin.trail');
+    }
+
+    public function get_extra_page(){
+        return view('admin.extra');
+    }
     public function profile(Request $request){
         $profile = Profile::where('user_id',Auth::guard('admin')->user()->id)->first();
         if($request->isMethod('POST')){
@@ -28,7 +35,7 @@ class AdminHomeController extends Controller
                 $profile = new Profile();
                 $profile->user_id = Auth::guard('admin')->user()->id;
             }
-            
+
             $profile->first_name = $request->first_name;
             $profile->last_name = $request->last_name;
             $profile->title = $request->title;
@@ -64,7 +71,7 @@ class AdminHomeController extends Controller
 
     public function invite_colleage(Request $request){
         if($request->isMethod('POST')){
-            
+
             $rules = [];
             $allempty = true;
             foreach($request->emails as $key => $email){
