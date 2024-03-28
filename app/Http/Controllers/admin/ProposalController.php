@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Proposal;
+use App\Models\ProposalType;
 use Illuminate\Http\Request;
 
 class ProposalController extends Controller
@@ -21,7 +22,8 @@ class ProposalController extends Controller
      */
     public function create()
     {
-        dd("Proposal Creation Form");
+        $proposal_types = ProposalType::where('status',1)->orderBy('type','ASC')->get();
+        return view('admin.proposals.create',compact('proposal_types'));
     }
 
     /**
