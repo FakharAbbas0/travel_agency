@@ -4,6 +4,7 @@ use App\Http\Controllers\BooksController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AdminHomeController;
 use App\Http\Controllers\admin\AdminLoginController;
+use App\Http\Controllers\admin\ProposalController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\HomeController;
@@ -66,6 +67,11 @@ Route::group(['middleware'=>'admin.auth'],function(){
     Route::get('/blank',[AdminHomeController::class,'blank_page'])->name('admin.blank');
     Route::get('/logout',[AdminHomeController::class,'logout'])->name('admin.logout');
     Route::match(['get','post'],'/invite_colleage',[AdminHomeController::class,'invite_colleage'])->name('admin.invite_colleage');
+    
+    Route::resource('proposals', ProposalController::class)->names([
+        'index' => 'admin.proposals.index',
+        'create' => 'admin.proposals.create'
+    ]);
 });
 
 Route::group(['middleware'=>'admin.guest'],function(){
