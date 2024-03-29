@@ -70,7 +70,8 @@ Route::group(['middleware'=>'admin.auth'],function(){
     
     Route::resource('proposals', ProposalController::class)->names([
         'index' => 'admin.proposals.index',
-        'create' => 'admin.proposals.create'
+        'create' => 'admin.proposals.create',
+        'store' => 'admin.proposals.store'
     ]);
 });
 

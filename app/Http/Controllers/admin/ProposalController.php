@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\Proposal;
 use App\Models\ProposalType;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class ProposalController extends Controller
@@ -22,7 +23,7 @@ class ProposalController extends Controller
      */
     public function create()
     {
-        $proposal_types = ProposalType::where('status',1)->orderBy('type','ASC')->get();
+        $proposal_types = ProposalType::where('status',1)->orderBy('id','ASC')->get();
         return view('admin.proposals.create',compact('proposal_types'));
     }
 
@@ -31,7 +32,35 @@ class ProposalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'client_name'=>'required',
+            'proposal_title'=>'required',
+            'proposal_summary'=>'required',
+            'proposal_type_id'=>'required|exists:proposal_types,id',
+            'from_date'=>'required|date_format:Y-m-d',
+            'to_date'=>'required|date_format:Y-m-d',
+            'created_on'=>'required|date_format:Y-m-d',
+        ]);
+        $currentDate = Carbon::parse($request->created_on);
+        $currentTime = Carbon::now();
+        $createdAt = $currentDate->setTime($currentTime->hour, $currentTime->minute, $currentTime->second);
+        $proposal=new Proposal;
+        $proposal->client_name = $request->client_name;
+        $proposal->proposal_title = $request->proposal_title;
+        $proposal->proposal_summary = $request->proposal_summary;
+        $proposal->proposal_type_id = $request->proposal_type_id;
+        $proposal->from_date = $request->from_date;
+        $proposal->to_date = $request->to_date;
+        $proposal->created_at = $createdAt;
+        if(!empty($request->options)){
+            foreach($request->options as $key => $option){
+                $option_name = 'purposal_option_'.$key;
+                $proposal->$option_name=$option;
+            }
+        }
+
+        $proposal->save();
+        return redirect()->back()->with('success','Proposal Saved Successfully');
     }
 
     /**

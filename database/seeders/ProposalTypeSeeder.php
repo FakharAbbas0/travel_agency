@@ -14,19 +14,23 @@ class ProposalTypeSeeder extends Seeder
     public function run(): void
     {
         $proposal_types = [
-        'Flight (ONLY)',
-        'Accommodation (ONLY)',
-        'Itinerary (ONLY)',
-        'Cruise (ONLY)',
-        'Package: Flight & Accommodation (ONLY)',
-        'Package: Flight, Accommodation & Transfers (ONLY)',
-        'Package: Flight & Cruise (ONLY)',
-        'Package: Flight, Accommodation & Cruise (ONLY)',
-        'Package: Flight, Accommodation, Transfers & Cruise (ONLY)'];
+            ['type'=>'Flight (ONLY)','input_type'=>'radio'],
+            ['type'=>'Accommodation (ONLY)','input_type'=>'select'],
+            ['type'=>'Itinerary (ONLY)','input_type'=>'select'],
+            ['type'=>'Cruise (ONLY)','input_type'=>'radio'],
+            ['type'=>'Package: Flight & Accommodation (ONLY)','input_type'=>'radio'],
+            ['type'=>'Package: Flight, Accommodation & Transfers (ONLY)','input_type'=>'radio'],
+            ['type'=>'Package: Flight & Cruise (ONLY)','input_type'=>'radio'],
+            ['type'=>'Package: Flight, Accommodation & Cruise (ONLY)','input_type'=>'radio'],
+            ['type'=>'Package: Flight, Accommodation, Transfers & Cruise (ONLY)','input_type'=>'radio']
+        ];
 
-        foreach($proposal_types as $type){
+        foreach($proposal_types as $typerow){
+            $type = $typerow['type'];
+            $input_type = $typerow['input_type'];
             $proposalType = new ProposalType;
             $proposalType->type = $type;
+            $proposalType->input_type = $input_type;
             $proposalType->save();
         }
     }
