@@ -2,7 +2,6 @@
 
 <body>
 
-
     <!-- ======= Header ======= -->
     @include('layouts.header')
     <!-- ======= Sidebar ======= -->
