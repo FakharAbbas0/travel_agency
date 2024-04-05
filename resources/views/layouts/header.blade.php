@@ -8,9 +8,17 @@
     </div><!-- End Logo -->
 
     @if(Auth::guard('admin')->check())
-    <div class="search-bar">
-        <h2 style="color: #4154f1">Wellcome Back : {{ Auth::guard('admin')->user()->name }}</h2>
-    </div><!-- End Search Bar -->
+        @if(Auth::guard('admin')->user()->role_id == 2) 
+        {{-- agent  --}}
+            <div class="search-bar">
+                <h2 style="color: #4154f1">Wellcome Back : {{ Auth::guard('admin')->user()->name }}</h2>
+            </div><!-- End Search Bar -->
+        @else 
+        {{-- admin  --}}
+            <div class="search-bar">
+                <h2 style="color: #f13d25">Wellcome Back : {{ Auth::guard('admin')->user()->name }}</h2>
+            </div><!-- End Search Bar -->
+        @endif
     @endif
 
     <nav class="header-nav ms-auto">

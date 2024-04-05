@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
         /* creating admin user */
         $user=new User();
         $user->name="Admin";
-        $user->email="admin@travelagency.com";
+        $user->email="admin@quovoy.com";
         $user->password=Hash::make('1122');
         $user->role_id=1; // admin
         $user->save();
@@ -26,7 +26,7 @@ class UsersTableSeeder extends Seeder
         /* creating agent user */
         $user=new User();
         $user->name="Agent";
-        $user->email="agent@travelagency.com";
+        $user->email="agent@quovoy.com";
         $user->password=Hash::make('1122');
         $user->role_id=2; // agent
         $user->save();
