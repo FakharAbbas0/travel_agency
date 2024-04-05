@@ -7,9 +7,11 @@
         <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
+    @if(Auth::guard('admin')->check())
     <div class="search-bar">
         <h2 style="color: #4154f1">Wellcome Back : {{ Auth::guard('admin')->user()->name }}</h2>
     </div><!-- End Search Bar -->
+    @endif
 
     <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
