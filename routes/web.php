@@ -75,6 +75,8 @@ Route::group(['middleware'=>'admin.auth'],function(){
         'create' => 'admin.proposals.create',
         'store' => 'admin.proposals.store'
     ]);
+
+    Route::post('/proposals/get-form',[ProposalController::class,'getPurposalForm'])->name('admin.proposals.getForm');
 });
 
 Route::group(['middleware'=>'admin.guest'],function(){

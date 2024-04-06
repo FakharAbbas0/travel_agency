@@ -7,6 +7,7 @@ use App\Models\Proposal;
 use App\Models\ProposalType;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class ProposalController extends Controller
 {
@@ -32,6 +33,7 @@ class ProposalController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->all());
         $request->validate([
             'client_name'=>'required',
             'proposal_title'=>'required',
@@ -93,5 +95,18 @@ class ProposalController extends Controller
     public function destroy(Proposal $proposal)
     {
         //
+    }
+
+    public function getPurposalForm(Request $request){
+        $purposal_type = ProposalType::find($request->type_id);
+        if(is_null($purposal_type)){
+            return '';
+        }
+        $data['purposal_type'] = $purposal_type;
+        $view = View::make('admin.proposals.forms.common.top-section',$data);
+        if($purposal_type->id == 1){ // flights
+            $view .= View::make('admin.proposals.forms.flight_form',$data);
+        }
+        return $view;
     }
 }
