@@ -1,4 +1,8 @@
 <style>
+    div#allTabsContent div.card-body {
+        padding-top: 20px !important;
+    }
+
     div#allTabsContent span,
     div#allTabsContent input,
     div#allTabsContent textarea,
