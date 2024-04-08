@@ -20,9 +20,14 @@
             <!-- Bordered Tabs -->
             <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
                 <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="accomodation-tab" data-bs-toggle="tab"
+                        data-bs-target="#accomodation" type="button" role="tab" aria-controls="home"
+                        aria-selected="true">Accomodation</button>
+                </li>
+                {{-- <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="flights-tab" data-bs-toggle="tab" data-bs-target="#flights"
                         type="button" role="tab" aria-controls="home" aria-selected="true">Flights</button>
-                </li>
+                </li> --}}
                 {{-- <li class="nav-item" role="presentation">
                     <button class="nav-link" id="accomodation-tab" data-bs-toggle="tab"
                         data-bs-target="#accomodation" type="button" role="tab"
@@ -49,15 +54,16 @@
                 </li>
             </ul>
             <div class="tab-content pt-2">
-                <div class="tab-pane fade show active" id="flights" role="tabpanel" aria-labelledby="flights-tab">
+                <div class="tab-pane fade show active" id="accomodation" role="tabpanel"
+                    aria-labelledby="accomodation-tab">
                     <div class="row align-items-center mb-2">
 
-                        <label for="inputText" class="col-md-2 col-form-label">Flight
+                        <label for="inputText" class="col-md-3 col-form-label">Accomodation
                             Option 1:</label>
                         <div class="col-md-1">
                             <button type="button" class="btn btn-primary">+</button>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <p class="m-0">Use this option to add more flight options as
                                 part of
                                 your proposal</p>
@@ -70,10 +76,10 @@
 
                         <div class="col-12 col-md-9">
                             <input type="text" class="form-control" value=""
-                                placeholder="Add Title e.g. London to New York Business Class">
+                                placeholder="Add Title e.g. 7 Nights Half-Board in Barcelona">
                         </div>
                         <div class="col-12 col-md-3"><input type="text" class="form-control" value=""
-                                placeholder="Total Price"></div>
+                                placeholder="Total Package Price"></div>
                     </div>
 
                     <div class="row my-3">
@@ -83,115 +89,174 @@
 
                                     <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="flights_sub_outbound_tab"
-                                                data-bs-toggle="tab" data-bs-target="#flights_sub_outbound"
-                                                type="button" role="tab" aria-controls="home"
-                                                aria-selected="true">Outbound</button>
+                                            <button class="nav-link active" id="accomodation_sub_id_1"
+                                                data-bs-toggle="tab" data-bs-target="#accomodation_sub_1" type="button"
+                                                role="tab" aria-controls="home" aria-selected="true">Check
+                                                In</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="flights_sub_return_tab" data-bs-toggle="tab"
-                                                data-bs-target="#flights_sub_return" type="button" role="tab"
-                                                aria-controls="home" aria-selected="true">Return</button>
+                                            <button class="nav-link" id="flights_sub_id_2" data-bs-toggle="tab"
+                                                data-bs-target="#accomodation_sub_2" type="button" role="tab"
+                                                aria-controls="home" aria-selected="true">Check Out</button>
                                         </li>
                                     </ul>
                                     <div class="tab-content pt-2" id="borderedTabContent">
-                                        <div class="tab-pane fade show active" id="flights_sub_outbound"
-                                            role="tabpanel" aria-labelledby="flights_sub_outbound_tab">
+                                        <div class="tab-pane fade show active" id="accomodation_sub_1" role="tabpanel"
+                                            aria-labelledby="accomodation_sub_id_1">
+
                                             <div class="row">
                                                 <div class="col-md-3 px-0">
                                                     <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Flight date">
+                                                        placeholder="Check in date">
+                                                </div>
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Earliest check in time">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel Name">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel Address">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel City/Region">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel Country">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Add Hotel Image/Video">
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 px-0 my-2">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                    <span>Use this option to add another hotel image or video</span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel Description">
+                                                </div>
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Key Hotel Feature">
+                                                </div>
+                                                <div class="col-md-6 px-0">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                    <span>Use this option to add key hotel feature</span>
                                                 </div>
                                             </div>
 
                                             <div class="row">
                                                 <div class="col-md-3 px-0">
                                                     <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Airline Name">
+                                                        placeholder="Number of Nights">
                                                 </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Flight Number">
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Flight from">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Departure Time">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Time zone">
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Flight To">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Arrival Time">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Time zone">
-                                                </div>
-                                            </div>
-
-
-                                            <div class="row">
                                                 <div class="col-md-3 px-0">
                                                     <input type="text" class="form-control" id="inputEmail5"
                                                         placeholder="Number of Adults">
                                                 </div>
                                                 <div class="col-md-3 px-0">
                                                     <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Seat type">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Max. Hand luggage allowance (per adult)">
+                                                        placeholder="Number of Children">
                                                 </div>
 
-                                                <div class="col-md-3 px-0">
+
+                                            </div>
+
+
+
+                                            <div class="row">
+                                                <div class="col-md-2 px-0">
                                                     <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Max. Haul luggage allowance (per adult)">
+                                                        placeholder="Room Type">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="How many">
+                                                </div>
+                                                <div class="col-md-5 px-0">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                    <span>Use this option to add another room type</span>
+                                                </div>
+
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Price per room">
                                                 </div>
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-md-3 px-0">
+                                                <div class="col-md-2 px-0">
                                                     <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Number of Children">
+                                                        placeholder="Package Type">
                                                 </div>
-                                                <div class="col-md-3 px-0">
+                                                <div class="col-md-2 px-0">
                                                     <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Seat type">
+                                                        placeholder="How many">
                                                 </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Max. Hand luggage allowance (per child)">
+                                                <div class="col-md-5 px-0">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                    <span>Use this option to add another package type</span>
                                                 </div>
 
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Max. Haul luggage allowance (per child)">
-                                                </div>
                                             </div>
+
 
                                             <div class="row">
                                                 <div class="col-md-12 px-0">
                                                     <textarea class="form-control"
-                                                        placeholder="Additional flight information/ disclaimers/ anything else the client must know about any aspects of this flight option"
+                                                        placeholder="Additional accomodation information/ disclaimers/ anything else the client must know about any aspects of their stay at this accomodation option"
                                                         name="" id=""></textarea>
                                                 </div>
+                                            </div>
+
+
+                                            <div class="row align-items-center">
+
+                                                <label for="inputText" class="col-md-3 col-form-label">Price per adult
+                                                    (Per night):
+                                                </label>
+                                                <div class="col-md-2">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <label for="inputText" class="col-md-2 col-form-label">Numer of nights
+                                                </label>
+                                                <div class="col-md-2">
+                                                    <input type="text" class="form-control">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row align-items-center">
+
+                                                <label for="inputText" class="col-md-3 col-form-label">Price per Child (Per night):
+                                                </label>
+                                                <div class="col-md-2">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <label for="inputText" class="col-md-2 col-form-label">Numer of nights
+                                                </label>
+                                                <div class="col-md-2">
+                                                    <input type="text" class="form-control">
+                                                </div>
+
                                             </div>
 
 
@@ -210,219 +275,15 @@
                                                     {{-- <textarea class="form-control"
                                                         placeholder="Add additional costs client should be aware off. Select if the cost is ‘Optional’ or ‘Required’ Add as many additional costs as necessary."
                                                         name="" id=""></textarea> --}}
-                                                        <span>Add additional costs client should be aware off. Select if the cost is ‘Optional’ or ‘Required’ Add as many additional costs as necessary.</span>
+                                                        <span>
+                                                            Add additional costs client should be aware off. Select if the cost is ‘Optional’ or ‘Required’ Add as many additional costs as necessary.
+                                                        </span>
                                                 </div>
                                             </div>
-
 
                                             <div class="row mt-1">
                                                 <div class="col-md-4 px-0">
-                                                    <textarea class="form-control" placeholder="Add any inclusive cost details" name="" id=""></textarea>
-                                                </div>
-                                                <div class="col-md-2 px-0">
-                                                    <textarea class="form-control" placeholder="Optional" name="" id=""></textarea>
-                                                </div>
-                                                <div class="col-md-1 px-0" style="margin: auto;text-align: center;">
-                                                    <button type="button" class="btn btn-primary">+</button>
-                                                </div>
-
-                                                <div class="col-md-5 px-0">
-                                                    {{-- <textarea class="form-control"
-                                                        placeholder="Add inclusive costs client should be aware off. These could be a breakdown of costs.included in the ‘Total cost’"
-                                                        name="" id=""></textarea> --}}
-                                                        <span>Add inclusive costs client should be aware off. These could be a breakdown of costs.included in the ‘Total cost’</span>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="row py-2">
-                                                <div class="col-md-3 px-0">
-                                                    <button type="button" class="btn btn-primary">Add another
-                                                        Flight</button>
-                                                </div>
-                                                <div class="col-md-9">
-                                                    <p>Use this option to add more fight
-                                                        details
-                                                        especially if clients have
-                                                        connecting
-                                                        flights to complete their journey
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="text-end">
-
-                                                    <button type="button" class="btn btn-primary">Continue</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade show" id="flights_sub_return" role="tabpanel"
-                                            aria-labelledby="flights_sub_return_tab">
-                                            <div class="row">
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Flight date">
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Airline Name">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Flight Number">
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Flight from">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Departure Time">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Time zone">
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Flight To">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Arrival Time">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Time zone">
-                                                </div>
-                                            </div>
-
-
-                                            <div class="row">
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Number of Adults">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Seat type">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Max. Hand luggage allowance (per adult)">
-                                                </div>
-
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Max. Haul luggage allowance (per adult)">
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Number of Children">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Seat type">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Max. Hand luggage allowance (per child)">
-                                                </div>
-
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Max. Haul luggage allowance (per child)">
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Number of Children (Free)">
-                                                </div>
-                                                <div class="col-md-3 px-0">
-                                                    <input type="text" class="form-control" id="inputEmail5"
-                                                        placeholder="Seat Type">
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-12 px-0">
-                                                    <textarea class="form-control"
-                                                        placeholder="Additional flight information/ disclaimers/ anything else the client must know about any aspects of this flight option"
-                                                        name="" id=""></textarea>
-                                                </div>
-                                            </div>
-
-                                            <div class="row align-items-center">
-
-                                                <label for="inputText" class="col-md-2 col-form-label">Price
-                                                    per adult:</label>
-                                                <div class="col-md-2">
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <p class="m-0">If outbound and
-                                                        return flights are priced
-                                                        individually, provide the total of
-                                                        both prices combined.</p>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="row align-items-center">
-
-                                                <label for="inputText" class="col-md-2 col-form-label">Price
-                                                    per Child:</label>
-                                                <div class="col-md-2">
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <p class="m-0">If outbound and
-                                                        return flights are priced
-                                                        individually, provide the total of
-                                                        both prices combined</p>
-                                                </div>
-
-                                            </div>
-
-
-                                            <div class="row my-1">
-                                                <div class="col-md-4 px-0">
-                                                    <textarea class="form-control" placeholder="Add any additional cost details" name="" id=""></textarea>
-                                                </div>
-                                                <div class="col-md-2 px-0">
-                                                    <textarea class="form-control" placeholder="Optional" name="" id=""></textarea>
-                                                </div>
-                                                <div class="col-md-1 px-0" style="margin: auto;text-align: center;">
-                                                    <button type="button" class="btn btn-primary">+</button>
-                                                </div>
-
-                                                <div class="col-md-5 px-0">
-                                                    {{-- <textarea class="form-control"
-                                                        placeholder="Add additional costs client should be aware off. Select if the cost is ‘Optional’ or ‘Required’ Add as many additional costs as necessary."
-                                                        name="" id=""></textarea> --}}
-                                                        <span>Add additional costs client should be aware off. Select if the cost is ‘Optional’ or ‘Required’ Add as many additional costs as necessary.</span>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="row my-1">
-                                                <div class="col-md-4 px-0">
-                                                    <textarea class="form-control" placeholder="Add any inclusive cost details" name="" id=""></textarea>
+                                                    <textarea class="form-control" placeholder="Add any inclusive cost details " name="" id=""></textarea>
                                                 </div>
                                                 <div class="col-md-2 px-0">
                                                     <textarea class="form-control" placeholder="Optional" name="" id=""></textarea>
@@ -445,23 +306,197 @@
                                             <div class="row py-2">
                                                 <div class="col-md-3 px-0">
                                                     <button type="button" class="btn btn-primary">Add another
-                                                        Flight</button>
+                                                        Accomodation</button>
                                                 </div>
                                                 <div class="col-md-9">
-                                                    <p>Use this option to add more fight
-                                                        details
-                                                        especially if clients have
-                                                        connecting
-                                                        flights to complete their journey
+                                                    <p>Use this option to add other accommodation especially if clients will be staying at more than one place as part of their trip
                                                     </p>
                                                 </div>
                                             </div>
 
                                             <div class="row">
                                                 <div class="text-end">
+
                                                     <button type="button" class="btn btn-primary">Continue</button>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="tab-pane fade show" id="accomodation_sub_2" role="tabpanel"
+                                            aria-labelledby="flights_sub_id_2">
+                                            
+                                            
+                                            <div class="row">
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Check out date">
+                                                </div>
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Earliest check out time">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel Name">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel Address">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel City/Region">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel Country">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Add Hotel Image/Video">
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 px-0 my-2">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                    <span>Use this option to add another hotel image or video</span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Hotel Description">
+                                                </div>
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Key Hotel Feature">
+                                                </div>
+                                                <div class="col-md-6 px-0">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                    <span>Use this option to add key hotel feature</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Number of Nights">
+                                                </div>
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Number of Adults">
+                                                </div>
+                                                <div class="col-md-3 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Number of Children">
+                                                </div>
+
+
+                                            </div>
+
+
+
+                                            <div class="row">
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Room Type">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="How many">
+                                                </div>
+                                                <div class="col-md-5 px-0">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                    <span>Use this option to add another room type</span>
+                                                </div>
+
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Price per room">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="Package Type">
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <input type="text" class="form-control" id="inputEmail5"
+                                                        placeholder="How many">
+                                                </div>
+                                                <div class="col-md-5 px-0">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                    <span>Use this option to add another package type</span>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-md-12 px-0">
+                                                    <textarea class="form-control"
+                                                        placeholder="Additional accomodation information/ disclaimers/ anything else the client must know about any aspects of their stay at this accomodation option"
+                                                        name="" id=""></textarea>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mt-1">
+                                                <div class="col-md-4 px-0">
+                                                    <textarea class="form-control" placeholder="Add any additional cost details" name="" id=""></textarea>
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <textarea class="form-control" placeholder="Optional" name="" id=""></textarea>
+                                                </div>
+                                                <div class="col-md-1 px-0" style="margin: auto;text-align: center;">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                </div>
+
+                                                <div class="col-md-5 px-0">
+                                                    {{-- <textarea class="form-control"
+                                                        placeholder="Add additional costs client should be aware off. Select if the cost is ‘Optional’ or ‘Required’ Add as many additional costs as necessary."
+                                                        name="" id=""></textarea> --}}
+                                                        <span>Add additional costs client should be aware off. Select if the cost is ‘Optional’ or ‘Required’ Add as many additional costs as necessary.</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-1">
+                                                <div class="col-md-4 px-0">
+                                                    <textarea class="form-control" placeholder="Add any inclusive cost details " name="" id=""></textarea>
+                                                </div>
+                                                <div class="col-md-2 px-0">
+                                                    <textarea class="form-control" placeholder="Optional" name="" id=""></textarea>
+                                                </div>
+                                                <div class="col-md-1 px-0" style="margin: auto;text-align: center;">
+                                                    <button type="button" class="btn btn-primary">+</button>
+                                                </div>
+
+                                                <div class="col-md-5 px-0">
+                                                    {{-- <textarea class="form-control"
+                                                        placeholder="Add inclusive costs client should be aware off. These could be a breakdown of costs.included in the ‘Total cost’"
+                                                        name="" id=""></textarea> --}}
+                                                        <span>
+                                                            Add inclusive costs client should be aware off. These could be a breakdown of costs.included in the ‘Total cost’
+                                                        </span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="text-end">
+
+                                                    <button type="button" class="btn btn-primary">Continue</button>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div><!-- End Bordered Tabs -->
 
@@ -472,20 +507,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade show" id="accomodation" role="tabpanel"
-                    aria-labelledby="accomodation-tab">
-                    Accomodation
-                </div>
-                <div class="tab-pane fade show" id="transfers" role="tabpanel" aria-labelledby="transfers-tab">
-                    Transfers
-                </div>
-                <div class="tab-pane fade show" id="activities" role="tabpanel" aria-labelledby="activities-tab">
-                    Activities
-                </div>
-
-                <div class="tab-pane fade show" id="cruise" role="tabpanel" aria-labelledby="cruise-tab">
-                    Cruise
                 </div>
                 <div class="tab-pane fade show" id="preview" role="tabpanel" aria-labelledby="preview-tab">
                     <div class="card">
@@ -530,7 +551,6 @@
                     </div>
                 </div>
             </div><!-- End Bordered Tabs -->
-
         </div>
     </div>
 </div>

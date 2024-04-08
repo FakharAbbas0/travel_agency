@@ -106,6 +106,8 @@ class ProposalController extends Controller
         $view = View::make('admin.proposals.forms.common.top-section',$data);
         if($purposal_type->id == 1){ // flights
             $view .= View::make('admin.proposals.forms.flight_form',$data);
+        } else if($purposal_type->id == 2){ // accomodation
+            $view .= View::make('admin.proposals.forms.accomodation',$data);
         }
         return $view;
     }

@@ -1,4 +1,5 @@
 <style>
+    div#allTabsContent span,
     div#allTabsContent input,
     div#allTabsContent textarea,
     div#allTabsContent p,
